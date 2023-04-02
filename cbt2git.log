@@ -1,0 +1,11 @@
+2023-04-02 15:19:04.132888 - Initialized conversion of CBT591
+2023-04-02 15:19:04.195271 - Received CBT.V504.FILE591.PDS from FILE591.XMI 
+2023-04-02 15:19:04.198219 - Found $$$#DATE.txt (text/plain) in CBT.V504.FILE591.PDS, moved to PDS/$$$#DATE
+2023-04-02 15:19:04.200656 - Found $DOC.txt (text/plain) in CBT.V504.FILE591.PDS, moved to PDS/$DOC
+2023-04-02 15:19:04.202050 - Found $MSG.txt (text/plain) in CBT.V504.FILE591.PDS, moved to PDS/$MSG
+2023-04-02 15:19:04.203332 - Found @FILE591.txt (text/plain) in CBT.V504.FILE591.PDS, moved to PDS/@FILE591
+2023-04-02 15:19:04.243027 - Found REXXFORM.xmi (application/xmit) in CBT.V504.FILE591.PDS
+2023-04-02 15:19:04.253097   - Received to CBT591/REXXFORM.PDS
+2023-04-02 15:19:04.254608 - Found REXXFOR1.txt (text/plain) in CBT.V504.FILE591.PDS, moved to PDS/REXXFOR1
+2023-04-02 15:19:04.255882 - Found REXXFRM.txt (text/plain) in CBT.V504.FILE591.PDS, moved to PDS/REXXFRM
+2023-04-02 15:19:04.257026 - Found REXXHLP.troff (text/troff) in CBT.V504.FILE591.PDS, moved to PDS/REXXHLP
