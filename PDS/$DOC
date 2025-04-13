@@ -1,0 +1,50 @@
+  Here are a couple of words of explanation for the VM XEDIT macro:
+
+  REXXFOR1 is a VM REXX exec which has been written to beautify and
+  reformat other REXX execs.  It is in the form of an XEDIT macro.
+  You XEDIT the REXX exec on VM, and run the XEDIT macro REXXFORM,
+  which reformats the exec that's being edited (I think.  You have
+  to try it).
+
+  Lionel Dyck has converted the VM REXXFORM exec (now renamed to member
+  REXXFOR1) to an ISPF edit macro to run under z/OS.  The converted z/OS
+  product is presented here as member REXXFORM, which is an XMIT-format
+  unloaded pds.  You create the pds for REXXFORM by executing the
+  command:
+
+    (TSO) RECEIVE INDS('this.pds(REXXFORM)')
+
+  where the "TSO" is only necessary when you execute this command from
+  the ISPF command line.
+
+  Remember that the TSO command RECEIVE is from IBM, and therefore it
+  has a HELP member in SYS1.HELP.  If you have any question about how to
+  use the RECEIVE command, go to its help member (named RECEIVE).
+
+  So the REXXFORM member in this pds now contains an ISPF edit macro
+  which can be used to reformat (and beautify) other REXX execs under
+  z/OS.
+
+       Lionel Dyck                    email:  lbdyck@gmail.com
+
+ Members:
+
+  REXXFORM   - the ISPF Edit macro in TSO Transmit format
+  REXXFOR1   - the original VM XEDIT macro
+  REXXFRM    - the original VM XEDIT macro (another variation)
+  REXXHLP    - VM CMS Help for REXXFORM XEDIT macro
+
+  To install:
+     1. Issue the TSO RECEIVE on member REXXFORM
+     2. Copy the REXXFORM exec into a library in your SYSPROC/SYSEXEC
+        concatenation
+     3. Copy member HELP into a library in your SYSHELP concatenation
+        as REXXFORM
+     4. Copy members #RXFM and #RXFM1 into a library in your ISPPLIB
+        concatenation
+
+  To use:
+      1. Enter REXXFORM ? for the ISPF tutorial
+   or 2. Enter REXXFORM .... to perform the format and do/select/end
+         check
+
